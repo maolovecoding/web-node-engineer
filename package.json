@@ -1,0 +1,51 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "前端工程化学习",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --es-module-specifier-resolution=node src/index.js "
+  },
+  "dependencies": {
+    "@yangzw/bruce-us": "1.0.3"
+  },
+  "engines": {
+    "node": ">=13.2.0",
+    "npm": ">=6.13.1",
+    "pnpm": ">=7.0.0"
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_ENV": "dev"
+    },
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "ext": "js json",
+    "ignore": [
+      "dist/"
+    ],
+    "watch": [
+      "src/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maolovecoding/web-node-engineer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maolovecoding/web-node-engineer/issues"
+  },
+  "homepage": "https://github.com/maolovecoding/web-node-engineer#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "nodemon": "^2.0.18"
+  }
+}
